@@ -4,7 +4,7 @@
         <title>Welcome! This is WEB1!</title>
         <meta charset="utf-8">
         <style>
-            body
+            body,p
             {
                 margin: 0;
             }
@@ -26,28 +26,46 @@
                 padding:20px;
             }
             ul
-            {
-                border-right: 1px solid grey;
-                width : 100px;
+            {                
                 margin: 0;
                 padding : 20px;
+            }
+            .m_link
+            {
+                font-weight: bold;
+                color: darkcyan;
+            }
+            .m_link:hover
+            {
+                color : coral;
+            }
+            #grid
+            {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #left
+            {
+                border-right: 1px solid grey;
             }
         </style>
     </head>
     <body>
-
         <h1>WEB1</h1>
-        <ul>
-           <li><a href="/index.html">This is</a></li>
-           <li><a>Profile</a></li>
-           <li><a href="/gallery.html">Gallery</a></li>
-        </ul>
-        <p>test!</p>
-        <p>test!</p>
-        
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        
+        <div id="grid">
+            <div id="left">
+            <ul>
+               <li><a href="/index.html">This is</a></li>
+               <li><a>Profile</a></li>
+               <li><a href="/gallery.html">Gallery</a></li>
+            </ul>
+            </div>
+
+            <div id="right">
+            <p>Check using element's frequency in <a href="https://caniuse.com/" class="m_link">caniuse</a></p>
+            <p>test!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </body>
 </html>
