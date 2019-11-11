@@ -3,90 +3,21 @@
     <head>
         <title>Welcome! This is WEB1!</title>
         <meta charset="utf-8">
-        <style>
-            body,p
-            {
-                margin: 0;
-            }
-            a 
-            {
-                color : black;
-                text-decoration : none;
-            }
-            a:hover 
-            {
-                color : red;
-            }
-            h1
-            {
-                font-size: 45px;
-                text-align: center;
-                border-bottom: 1px solid black;
-                margin: 0;
-                padding:20px;
-            }
-            ul
-            {                
-                margin: 0;
-            }
-             
-            .m_link
-            {
-                font-weight: bold;
-                color: darkcyan;
-            }
-            .m_link:hover
-            {
-                color : coral;
-            }
-            @media(min-width: 0)
-            {
-                #grid
-                {
-                    
-                }
-                #grid #navigation
-                {
-                    border-bottom: 1px solid grey;
-                }
-                #grid #article
-                {
-                }
-            }
-            
-            @media(min-width:800px)
-            {
-                #grid
-                {
-                    display: grid;
-                    grid-template-columns: 150px 1fr;
-                }
-                #grid #navigation
-                {
-                    border-right: 1px solid grey;
-                    border-bottom: none;
-                    padding-left : 33px;
-                }
-                #grid #article
-                {
-                    padding-left: 25px;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>WEB1</h1>
         <div id="grid">
             <div id="navigation">
                 <ul>
-                   <li><a href="index.html">This is</a></li>
-                   <li><a>Profile</a></li>
-                   <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html">This is</a></li>
+                    <li><a>Profile</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </div>
 
             <div id="article">
-               <h2>This is</h2>
+                <h2>This is</h2>
                 <p>Check using element's frequency in <a href="https://caniuse.com/" class="m_link">caniuse</a></p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
